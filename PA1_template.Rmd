@@ -16,7 +16,7 @@ data$date = as.Date(as.character(data$date), "%Y-%m-%d")
 daysteps<-tapply(data$steps, data$date, sum, na.rm=TRUE)
 #create histogram
 par(mar=c(5,4,2,2))
-hist(daysteps, xlab="No of steps per day", main=NULL)
+hist(daysteps, xlab="Number of steps per day", main=NULL)
 mean1<-mean(daysteps)
 print(mean1)
 median1<-median(daysteps)
